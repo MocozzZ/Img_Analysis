@@ -46,7 +46,7 @@ while True:
     for cnt in cnts1:
         (x, y, w, h) = cv2.boundingRect(cnt)  # 返回矩阵坐标
         cv2.rectangle(frame, (x - x_min, y - y_min), (x + w, y + h), (0, 0, 255), 2)  # 框取颜色
-        cv2.putText(frame, 'red', (x - x_min, y), font, 0.7, (0, 0, 255), 2)
+        cv2.putText(frame, 'red', (x - x_min, y - y_min), font, 0.7, (0, 0, 255), 2)
     for cnt in cnts2:
         (x, y, w, h) = cv2.boundingRect(cnt)
         cv2.rectangle(frame, (x - x_min, y - y_min), (x + w, y + h), (30, 255, 255), 2)  # 将检测到的颜色框起来
