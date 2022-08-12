@@ -20,4 +20,4 @@ They are all common Python libraries.So I don't recommend you install them by 'r
 I recommend that you install the latest version by 'pip install xxx'
 
 # Version 1.1
-Repeat: Very Very Very SIMPLE!!!
+Repeat: very very very SIMPLE!!!
