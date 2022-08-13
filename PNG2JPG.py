@@ -11,7 +11,6 @@ def png2jpg(png_path):
     img = img.resize((int(w), int(h)), Image.ANTIALIAS)
     try:
         if len(img.split()) == 4:
-            # prevent IOError: cannot write mode RGBA as BMP
             r, g, b, a = img.split()
             img = Image.merge("RGB", (r, g, b))
             img.convert('RGB').save(outfile, quality=90)
@@ -22,7 +21,6 @@ def png2jpg(png_path):
         return outfile
     except Exception as e:
         print("PNG2JPG ERROR！！！", e)
-
 
 def show_files(path, all_files):
     file_list = os.listdir(path)
