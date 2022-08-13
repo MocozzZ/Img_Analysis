@@ -39,9 +39,3 @@ def show_files(path, all_files):
             all_files.append(file)
 
     return all_files
-
-
-if __name__ == '__main__':
-    # file name
-    img_path = '***'
-    contents = show_files(img_path, [])
